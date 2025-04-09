@@ -36,7 +36,7 @@ server.post('/register',async(req,res)=>{
         })
     }
 })
- server.post('./login',async(req,res)=>{
+ server.post('/login',async(req,res)=>{
     try{
         const{userName,password}=req.body
         const userExist=await User.findOne({userName})
